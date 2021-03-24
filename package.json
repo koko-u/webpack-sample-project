@@ -1,0 +1,8 @@
+{
+  "name": "webpack-sample-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:koko-u/webpack-sample-project.git",
+  "author": "KOZAKI Tsuneaki <kozaki.tsuneaki@gmail.com>",
+  "license": "MIT"
+}
