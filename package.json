@@ -6,7 +6,7 @@
   "author": "KOZAKI Tsuneaki <kozaki.tsuneaki@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack --mode development"
+    "dev": "webpack --config webpack.config.js --mode development"
   },
   "devDependencies": {
     "webpack": "^5.28.0",
