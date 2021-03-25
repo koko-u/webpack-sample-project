@@ -6,11 +6,13 @@ module.exports = {
     entry: "./src/index.js",
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "bundle.js",
+        filename: "./js/app.js",
         clean: true,
     },
     plugins: [
-        new MiniCssExtractPlugin(),
+        new MiniCssExtractPlugin({
+            filename: "./css/styles.css"
+        }),
         new HtmlWebpackPlugin({
             template: "./src/index.html",
             inject: "body",
