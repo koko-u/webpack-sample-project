@@ -8,6 +8,7 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
         filename: "./js/app.js",
         clean: true,
+        assetModuleFilename: "img/[hash][ext][query]",
     },
     plugins: [
         new MiniCssExtractPlugin({
@@ -31,6 +32,15 @@ module.exports = {
                         loader: "css-loader",
                     },
                 ],
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif)$/,
+                type: "asset",
+                parser: {
+                    dataUrlCondition: {
+                        maxSize: 2 * 1024,
+                    },
+                },
             },
         ],
     },
